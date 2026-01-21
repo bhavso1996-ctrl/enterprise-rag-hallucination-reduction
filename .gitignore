@@ -1,0 +1,18 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Generated data artifacts
+data/chunks/
+data/parsed_docs/
+data/cleaned_docs/
+data/faiss_index/
+data/index/
+
+# OS files
+.DS_Store
+Thumbs.db

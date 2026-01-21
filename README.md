@@ -1,8 +1,5 @@
-# Enterprise RAG Hallucination Reduction
+This project builds a document-based question answering system using enterprise policy documents.
 
-This project focuses on building a question-answering system that works on
-enterprise documents like policies and manuals.
+When a user asks a question, the system first retrieves relevant sections from the policy documents using similarity search. A language model then generates an answer using only the retrieved document content.
 
-The goal is to reduce hallucinations by making sure the AI only answers
-using information that actually exists in the documents.
-
+If the documents do not contain enough information to answer the question, the system responds with “I don’t know” instead of generating an unsupported answer. This helps reduce incorrect or hallucinated responses.
